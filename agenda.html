@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agenda — MTs AL-AMIIN Sangkanhurip</title>
+    <link rel="icon" href="logo_Mts.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                50: "#ecfdf5",
+                100: "#d1fae5",
+                200: "#a7f3d0",
+                300: "#6ee7b7",
+                400: "#34d399",
+                500: "#10b981",
+                600: "#059669",
+                700: "#047857",
+                800: "#065f46",
+                900: "#064e3b",
+              },
+              brand: {
+                100: "#e1f7d3",
+                200: "#c3efaa",
+                300: "#9fe377",
+                400: "#6fcd4b",
+                500: "#3fb52a",
+                600: "#2f8b20",
+                700: "#246b19",
+              },
+            },
+            fontFamily: {
+              display: [
+                "Poppins",
+                "ui-sans-serif",
+                "system-ui",
+                "Segoe UI",
+                "sans-serif",
+              ],
+              body: [
+                "Inter",
+                "ui-sans-serif",
+                "system-ui",
+                "Segoe UI",
+                "sans-serif",
+              ],
+            },
+            boxShadow: { soft: "0 6px 20px rgba(0,0,0,0.08)" },
+            backgroundImage: {
+              hero: "linear-gradient(90deg, #1f9c45 0%, #39b54a 50%, #1f9c45 100%)",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .container-narrow {
+        max-width: 1024px;
+      }
+      .bg-grid {
+        background-image: repeating-linear-gradient(
+            0deg,
+            rgba(46, 139, 33, 0.08) 0px,
+            rgba(46, 139, 33, 0.08) 1px,
+            transparent 1px,
+            transparent 8px
+          ),
+          repeating-linear-gradient(
+            90deg,
+            rgba(46, 139, 33, 0.06) 0px,
+            rgba(46, 139, 33, 0.06) 1px,
+            transparent 1px,
+            transparent 8px
+          );
+      }
+    </style>
+  </head>
+  <body class="min-h-screen flex flex-col bg-green-50 bg-grid font-body text-slate-800">
+    <header class="bg-hero text-white">
+      <div
+        class="mx-auto container-narrow px-4 py-4 md:py-6 flex items-center gap-4"
+      >
+        <img
+          src="logo_Mts.png"
+          alt="Logo MTs AL-AMIIN"
+          class="w-14 h-14 md:w-16 md:h-16 rounded-full ring-2 ring-white/60 shadow"
+        />
+        <div class="flex-1">
+          <h1
+            class="font-display text-2xl md:text-4xl font-extrabold tracking-wide drop-shadow"
+          >
+            MTs AL-AMIIN <span class="text-lime-200">Sangkanhurip</span>
+          </h1>
+          <p class="text-sm md:text-base text-white/90">
+            Madrasah Tsanawiyah – Berakhlak Mulia, Berprestasi, dan Berwawasan
+            Lingkungan
+          </p>
+        </div>
+      </div>
+      <nav class="bg-emerald-700 text-white">
+        <div class="mx-auto container-narrow px-4">
+          <div
+            class="flex flex-wrap items-center gap-1 md:gap-2 py-2 text-sm uppercase tracking-wide"
+          >
+            <a href="index.html" class="px-3 py-2 hover:bg-emerald-600"
+              >Beranda</a
+            ><a href="profil.html" class="px-3 py-2 hover:bg-emerald-600"
+              >Profil</a
+            ><a href="berita.html" class="px-3 py-2 hover:bg-emerald-600"
+              >Berita</a
+            ><a href="agenda.html" class="px-3 py-2 bg-emerald-600">Agenda</a
+            ><a href="galeri.html" class="px-3 py-2 hover:bg-emerald-600"
+              >Galeri</a
+            ><a href="kontak.html" class="px-3 py-2 hover:bg-emerald-600"
+              >Kontak</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="flex-1 mx-auto container-narrow px-4 py-6 grid grid-cols-1 lg:grid-cols-12 gap-6">
+      <section class="lg:col-span-8 space-y-4">
+        <div
+          class="bg-white rounded shadow-soft border border-emerald-300 overflow-hidden"
+        >
+          <div
+            class="bg-gradient-to-r from-emerald-600 to-emerald-700 text-white px-4 py-2 font-semibold uppercase tracking-wide"
+          >
+            Agenda Kegiatan
+          </div>
+          <ul class="p-4 space-y-3 text-sm">
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-2 h-2 rounded-full bg-emerald-500"></span>
+              Rapat guru bulanan – 15 Nov
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-2 h-2 rounded-full bg-emerald-500"></span>
+              Tryout AKM – 20 Nov
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-2 h-2 rounded-full bg-emerald-500"></span>
+              Peringatan Hari Guru – 25 Nov
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded shadow-soft border border-emerald-300 overflow-hidden">
+          <div class="bg-gradient-to-r from-emerald-600 to-emerald-700 text-white px-4 py-2 font-semibold uppercase tracking-wide">Agenda Mendatang</div>
+          <div class="p-4 space-y-3 text-sm">
+            <div class="flex items-start gap-3">
+              <div class="min-w-[56px] text-center rounded-md border border-emerald-200">
+                <div class="bg-emerald-600 text-white text-xs py-1 rounded-t">Nov</div>
+                <div class="py-1 font-semibold">30</div>
+              </div>
+              <div>
+                <div class="font-medium">Seminar Parenting</div>
+                <div class="text-slate-600">Aula MTs, 08.00 WIB</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="min-w-[56px] text-center rounded-md border border-emerald-200">
+                <div class="bg-emerald-600 text-white text-xs py-1 rounded-t">Des</div>
+                <div class="py-1 font-semibold">05</div>
+              </div>
+              <div>
+                <div class="font-medium">Lomba Kebersihan Kelas</div>
+                <div class="text-slate-600">Seluruh kelas, 09.00 WIB</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="min-w-[56px] text-center rounded-md border border-emerald-200">
+                <div class="bg-emerald-600 text-white text-xs py-1 rounded-t">Des</div>
+                <div class="py-1 font-semibold">18</div>
+              </div>
+              <div>
+                <div class="font-medium">Ujian Akhir Semester</div>
+                <div class="text-slate-600">Ruang kelas, 07.00–12.00 WIB</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <aside class="lg:col-span-4 space-y-4">
+        <div
+          class="bg-white rounded shadow-soft border border-emerald-300 overflow-hidden"
+        >
+          <div
+            class="bg-gradient-to-r from-emerald-600 to-emerald-700 text-white px-4 py-2 font-semibold uppercase tracking-wide"
+          >
+            Kalender
+          </div>
+          <div class="p-4">
+            <div
+              id="calendar"
+              class="grid grid-cols-7 gap-1 text-center text-xs"
+            ></div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded shadow-soft border border-emerald-300 overflow-hidden">
+          <div class="bg-gradient-to-r from-emerald-600 to-emerald-700 text-white px-4 py-2 font-semibold uppercase tracking-wide">Download</div>
+          <div class="p-4 space-y-2 text-sm">
+            <a href="#" class="flex items-center justify-between px-3 py-2 rounded border border-emerald-100 hover:bg-emerald-50"><span class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-emerald-700"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>Surat Edaran (PDF)</span><span class="text-emerald-700">Unduh</span></a>
+            <a href="#" class="flex items-center justify-between px-3 py-2 rounded border border-emerald-100 hover:bg-emerald-50"><span class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-emerald-700"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M7 8h10M7 12h6"/></svg>Jadwal UAS (PDF)</span><span class="text-emerald-700">Unduh</span></a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded shadow-soft border border-emerald-300 overflow-hidden">
+          <div class="bg-gradient-to-r from-emerald-600 to-emerald-700 text-white px-4 py-2 font-semibold uppercase tracking-wide">Tautan Eksternal</div>
+          <div class="p-4 space-y-2 text-sm">
+            <a href="https://kemenag.go.id" target="_blank" class="block px-3 py-2 rounded hover:bg-emerald-50">Kementerian Agama</a>
+            <a href="https://kemdikbud.go.id" target="_blank" class="block px-3 py-2 rounded hover:bg-emerald-50">Kemdikbud</a>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="bg-emerald-700 text-emerald-50">
+      <div class="mx-auto container-narrow px-4 py-8 grid md:grid-cols-3 gap-6">
+        <div class="flex items-center gap-3">
+          <img
+            src="logo_Mts.png"
+            alt="Logo"
+            class="w-10 h-10 rounded-full ring-1 ring-white/50"
+          />
+          <div>
+            <div class="font-display font-bold">MTs AL-AMIIN Sangkanhurip</div>
+            <div class="text-sm text-emerald-100">Jl. Cibiru No. 1, SANGKANHURIP, Kec. Sindang, Kab. Majalengka, Jawa Barat</div>
+          </div>
+        </div>
+        <div>
+          <div class="font-semibold mb-2">Kontak</div>
+          <ul class="text-sm text-emerald-100 space-y-1">
+            <li>Email: info@mts-alamiin.sch.id</li>
+            <li>Telepon: (0265) 000000</li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-semibold mb-2">Tautan</div>
+          <ul class="text-sm text-emerald-100 space-y-1">
+            <li><a class="hover:underline" href="berita.html">Berita</a></li>
+            <li><a class="hover:underline" href="agenda.html">Agenda</a></li>
+            <li><a class="hover:underline" href="galeri.html">Galeri</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-emerald-600">
+        <div class="mx-auto container-narrow px-4 py-4 flex items-center gap-3">
+          <img src="./abdul_kholik.jpg" alt="Abdul Kholik" class="w-9 h-9 rounded-full ring-1 ring-white/40 object-cover" />
+          <p class="text-sm">
+            Website dibuat oleh <span class="font-semibold">Abdul Kholik</span> — Founder SyntaxTrust.
+            <a href="https://web-jasa.akarsekawan.my.id/" target="_blank" rel="noopener" class="underline font-medium text-emerald-100 hover:text-white">web-jasa.akarsekawan.my.id</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
